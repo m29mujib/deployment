@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cabin:ital,wght@0,500;1,400&family=Caveat:wght@600&family=Exo:wght@700&family=Jost:wght@500;700&family=Manrope:wght@600&family=Poppins:wght@300&family=Roboto:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --color-text: #0D6EFD;
+    --color-bg: #37517E;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 8%;
+}
+
+.logo {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.nav .nav-link a {
+    padding: 20px;
+    color: var(--color-text);
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+}
+
+.fluid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    padding: 50px 8%;
+    background-color: var(--color-bg);
+}
+
+.fluid-main {
+    flex: 1;
+    flex-basis: 50%;
+    font-family: 'Jost', sans-serif;
+}
+
+.fluid-main h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #fff;
+}
+
+.fluid-main p {
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 29px;
+}
+
+.gambar {
+    flex: 1;
+    flex-basis: 50%;
+}
+
+.btn-1 {
+    padding: 10px 15px;
+    background-color: var(--color-text);
+    border-radius: 20px;
+    color: #fff;
+    letter-spacing: 1px;
+    border: none;
+    margin-top: 50px;
+    font-family: "jost";
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 30px;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-decoration: none;
+}
+
+.btn-1:hover {
+    background-color: #115ed3;
+}
+
+.btn-2 {
+    border: none;
+    background-color: transparent;
+    font-family: "jost";
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+/* Feautures */
+
+#feautures {
+    width: 100%;
+    padding: 50px 8%;
+    background-color: #F3F5FA;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#feautures h2 {
+    text-align: center;
+    font-family: 'Jost', sans-serif;
+    color: #333;
+    font-weight: 500;
+}
+
+#feautures p {
+    text-align: center;
+    font-family: 'Jost', sans-serif;
+    color: #333;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.sub {
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    /* width: 516px; */
+    width: 50%;
+    outline: none;
+    border: none;
+    background-color: #fff;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0 0 0 20px;
+    margin-top: 30px;
+}
+
+.input {
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+.btn-3 {
+    padding: 10px 20px;
+    background-color: var(--color-text);
+    color: #fff;
+    letter-spacing: 1px;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Jost', sans-serif;
+    cursor: pointer;
+}
+
+.btn-3:hover {
+    background-color: #115ed3;
+}
+
+.org {
+    background-color: #fff;
+    width: 100%;
+    padding: 50px 8%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.org h2 {
+    color: var(--color-bg);
+    font-family: "Jost";
+    margin-bottom: 30px;
+}
+
+.link a {
+    display: block;
+    line-height: 25px;
+    color: #333;
+    font-family: 'Jost';
+}
+
+.org p {
+    font-family: 'Jost';
+    line-height: 25px;
+}
+
+footer {
+    font-family: 'Jost';
+    width: 100%;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-bg);
+}
+
+footer p {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+footer p span {
+    color: var(--color-text);
+}
+
+@media screen and (max-width:600px) {
+    .nav .nav-link {
+        display: none;
+    }
+    .fluid {
+        flex-wrap: wrap;
+    }
+    .fluid-main {
+        flex-wrap: wrap;
+    }
+    .gambar img {
+        width: 300px;
+        margin-top: 50px;
+    }
+    .sub {
+        width: 100%;
+    }
+    .org {
+        flex-wrap: wrap;
+    }
+    footer p {
+        font-size: 10px;
+    }
+}
